@@ -28,9 +28,6 @@ Wait about 1-2 minutes for all services to become healthy.
 
 Open http://localhost:8080
 
-**Login credentials:**
-- Username: `airflow`
-- Password: `airflow`
 
 ### 3. Run dbt Commands
 
@@ -120,19 +117,6 @@ PostgreSQL creates three databases:
 ## Environment Variables
 
 Configure in `.env` file:
-
-```
-AIRFLOW_UID=50000
-_AIRFLOW_WWW_USER_USERNAME=airflow
-_AIRFLOW_WWW_USER_PASSWORD=airflow
-
-DBT_POSTGRES_HOST=postgres
-DBT_POSTGRES_PORT=5432
-DBT_POSTGRES_USER=airflow
-DBT_POSTGRES_PASSWORD=airflow
-DBT_POSTGRES_DB=dbt_db
-DBT_POSTGRES_SCHEMA=public
-```
 
 ## Common Commands
 
