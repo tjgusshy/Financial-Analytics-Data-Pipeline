@@ -1,0 +1,6 @@
+product_id,product_name,product_type,risk_level
+1,Global Shares,ETF,High
+2,Balanced Portfolio,Fund,Medium
+3,Defensive Portfolio,Fund,Low
+4,Technology Leaders,ETF,High
+5,Emerging Markets,ETF,Medium

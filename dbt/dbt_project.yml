@@ -1,0 +1,31 @@
+name: 'my_dbt_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'my_dbt_project'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  my_dbt_project:
+    bronze:
+      +schema: bronze
+      +tags: ['bronze']
+      +materialized: table
+    silver:
+      +schema: silver
+      +tags: ['silver']
+      +materialized: table 
+    gold:
+      +schema: gold
+      +tags: ['gold']
+      +materialized: table

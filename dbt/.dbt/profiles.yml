@@ -1,0 +1,13 @@
+my_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      threads: 16
+      authenticator: username_password_mfa
+      account: 'adapter would you like to use?:'
+      user: '> snowflake'
+      database: '  databricks'
+      warehouse: '  bigquery'
+      schema: '  postgres'
+      role: '  redshift'

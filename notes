@@ -1,0 +1,23 @@
+docker exec -it dbt-airflow-webserver bash
+cd /dbt
+dbt init
+Bronze only: dbt run --select bronze.*
+Silver only: dbt run --select silver.*
+Specific model: dbt run --select dim_customer
+
+problems
+Found the problem! Your silver model file is named dim_customer without a .sql extension. dbt only recognizes files with .sql extension as models.
+
+dim_date
+select
+    distinct
+    transaction_date,
+    extract(year from transaction_date) as year,
+    extract(month from transaction_date) as month,
+    extract(day from transaction_date) as day,
+    extract(dow from transaction_date) as day_of_week,
+    to_char(transaction_date, 'Month') as month_name,
+    case when extract(dow from transaction_date) in (0,6) then true else false end as is_weekend,
+    replace(transaction_date::text, '-', '')::int as date_key
+
+    customer data == signup_date_key

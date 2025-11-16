@@ -1,0 +1,39 @@
+<mxfile host="65bd71144e">
+    <diagram id="AltAPEmv7-YW5fg4XMJe" name="Page-1">
+        <mxGraphModel dx="660" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="dim_customer" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="620" width="185" height="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;ustomer_id INT,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; first_name TEXT,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; last_name TEXT,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; email TEXT,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; signup_date_key int&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;risk_profile_fk&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="7.5" y="30" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="dim_risk" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="97.5" y="790" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="risk_profile_pk&lt;div&gt;risk_profile&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="30" y="40" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;entryX=0.532;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="dim_date" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="530" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="signup_date_key&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;signup_date&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;opned_date_key&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;opned_date&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="15">
+                    <mxGeometry x="25" y="25" width="110" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="dim_account_type" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="780" width="180" height="180" as="geometry">
+                        <mxRectangle x="350" y="780" width="140" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="account_id&lt;div&gt;account_type&lt;/div&gt;&lt;div&gt;opened_date_key&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="17">
+                    <mxGeometry x="20" y="25" width="120" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,17 @@
+my_dbt_project:
+  outputs:
+    dev:
+      dbname: '{{ env_var("DBT_POSTGRES_DB", "dbt_db") }}'
+      host: '{{ env_var("DBT_POSTGRES_HOST", "postgres") }}'
+      keepalives_idle: 0
+      password: '{{ env_var("DBT_POSTGRES_PASSWORD", "airflow") }}'
+      port: '{{ env_var("DBT_POSTGRES_PORT", "5432") | as_number }}'
+
+      # Default schema is dbt_default — can be overridden by env var
+      schema: '{{ env_var("DBT_POSTGRES_SCHEMA", "dbt_default") }}'
+
+      threads: 4
+      type: postgres
+      user: '{{ env_var("DBT_POSTGRES_USER", "airflow") }}'
+  target: dev
+

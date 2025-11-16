@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: moneybox_raw
+    database: dbt_db
+    schema: public
+    tables:
+      - name: raw_customers
+      - name: raw_accounts
+      - name: raw_products
+      - name: raw_deposits
+      - name: raw_transactions
+      - name: raw_pricing
